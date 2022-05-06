@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+
+div p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  margin: 20px 0px 30px 0px;
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px;
+  width: 80%;
+  min-height: 400px;
+}
+
+.col1 {
+  background-color: hsl(31, 77%, 52%);
+  height: 60vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 20px;
+  border-radius: 10px 10px 0px 0px;
+  margin: 0 auto;
+}
+
+.col2{
+  background-color:  hsl(184, 100%, 22%);
+  height: 60vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 20px;
+  margin: 0 auto;
+}
+
+.col3{
+  background-color:  hsl(179, 100%, 13%);
+  height: 60vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 20px;
+  border-radius: 0px 0px 10px 10px;
+  margin: 0 auto;
+}
+
+img{
+  width: 50px;
+  height: 30px;
+  margin: 30px 0px;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  border-radius: 20px;
+  width: 60%;
+  height: 6.5vh;
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  margin: 30px 0px;
+}
+
+
+#btn1 {
+ color: hsl(31, 77%, 52%); 
+}
+
+#btn2 {
+ color: hsl(184, 100%, 22%); 
+}
+
+#btn3 {
+  color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (min-width: 630px) and (max-width: 1040px) {
+
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 50px auto;
+  }
+
+  p {
+    letter-spacing: 0em;
+    word-spacing: 0em;
+  }
+
+  .col1, .col2, .col3 {
+    width: 50%;
+  }
+  
+}
+
+@media only screen and (min-width: 1040px){
+  section {
+    flex-direction: row;
+    margin: 50px auto;
+    height: 600px;
+  }
+
+  .col1, .col2, .col3 {
+    height: 65vh;
+  }
+  .col1{
+    border-radius: 10px 0px 0px 10px;
+  } 
+  
+  .col3 {
+    border-radius: 0px 10px 10px 0px;
+  }
+}
